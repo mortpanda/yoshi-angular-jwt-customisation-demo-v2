@@ -1,4 +1,4 @@
-
+Please see https://github.com/mortpanda/angular-jwt-customisation-demo-v2 for information
 
 ## Screenshots
 <img src="/Capture.PNG" alt="drawing" width="600"/>

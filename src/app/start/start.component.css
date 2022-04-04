@@ -82,6 +82,7 @@
   /* border-style: solid !important; */
   width: 100%!important;
   height:450px!important;
+  overflow-y: auto!important;
 }
 
 .tokenHead2{
@@ -113,6 +114,7 @@
   margin-top: 15px !important;
   word-wrap: normal !important;
   background-color: black !important;
+  
 }
 .jsonJWT {
   white-space: pre-wrap !important;
@@ -125,6 +127,7 @@
   padding-bottom: 20px!important;
   padding-left: 10px!important;
   padding-right: 10px!important;
+  
 }
 
 .attributeHead {
