@@ -1,0 +1,164 @@
+<div class="wrapper">
+  <div class="page-header section-dark" style="background-image: url('assets/img/turq_dark.png')">
+
+    <div class="fxContainer" fxLayout="row wrap" fxLayoutAlign="center start">
+      <div class="userDiv">{{ this.thisUser }}</div>
+
+      <div class="contentDiv">
+        <div class="tokenContentContainer" fxLayout="columns wrap" fxLayoutAlign="center center" fxLayoutGap="10px">
+          <div class="tokenItem">
+            <div class="tokenInfo" fxLayout="row wrap" fxLayoutAlign="center center">
+              <!-- <div class="tokenHead">デフォルトScopeのToken<br />openid, email, profile</div> -->
+              <div class="tokenHead">デフォルトScopeのToken</div>
+              <div class="tokenContent">
+                <div>Scope = openid, email, profile</div>
+                <div class="strToken">                 
+
+                  <p class="jsonJWT">
+
+                    <a class="attributeHead">authorizeUrl : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.authorizeUrl }}</a><br />
+          
+                    <a class="attributeHead indentLevel1">claims: </a> <br />
+                    <a class="attributeHead indentLevel2">aud : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.claims.aud }}</a> <br />
+          
+                    <a class="attributeHead indentLevel2">cid : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.claims.cid }}</a> <br />
+          
+                    <a class="attributeHead indentLevel2">exp : </a>
+                    <a class="attExpiry">{{ arrAccessToken.claims.exp }}</a> <br />
+          
+                    <a class="attributeHead indentLevel2">iat : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.claims.iat }}</a> <br />
+          
+                    <a class="attributeHead indentLevel2">iss : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.claims.iss }}</a> <br />
+          
+                    <a class="attributeHead indentLevel2">jti : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.claims.jti }}</a> <br />
+          
+                    <a class="attributeHead indentLeve3">scp : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.claims.scp }}</a> <br />
+          
+                    <a class="attributeHead indentLevel2">sub : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.claims.sub }}</a> <br />
+          
+                    <a class="attributeHead indentLevel2">uid : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.claims.uid }}</a> <br />
+          
+                    <a class="attributeHead indentLevel2">ver : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.claims.ver }}</a> <br />
+          
+                    <a class="attributeHead indentLevel1">expiresAt : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.expiresAt }}</a> <br />
+          
+                    <!-- <a class="attributeHead indentLevel1">scopes : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.scopes }}</a> <br /> -->
+          
+                    <a class="attributeHead indentLevel1">tokenType : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.tokenType }}</a> <br />
+          
+                    <a class="attributeHead indentLevel1">userinfoUrl : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.userinfoUrl }}</a> <br />
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tokenItem">
+            <div class="tokenInfo" fxLayout="row wrap" fxLayoutAlign="center center">
+              <!-- <div class="tokenHead2">カスタムScopeのToken<br />openid, email, profile, <a class="customClaim">groups</a></div> -->
+              <div class="tokenHead2">カスタムScopeのToken</div>
+              <div class="tokenContent">
+                <div>Scope = openid, email, profile, <a class="groups">groups</a></div>
+                <div class="strToken">                 
+
+                  <p class="jsonJWT">
+
+                    <a class="attributeHead">authorizeUrl : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.authorizeUrl }}</a><br />
+          
+                    <a class="attributeHead indentLevel1">claims: </a> <br />
+                    <a class="attributeHead indentLevel2">aud : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.claims.aud }}</a> <br />
+          
+                    <a class="attributeHead indentLevel2">cid : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.claims.cid }}</a> <br />
+          
+                    <a class="attributeHead indentLevel2">exp : </a>
+                    <a class="attExpiry">{{ arrAccessToken.claims.exp }}</a> <br />
+          
+                    <a class="attributeHead indentLevel2">iat : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.claims.iat }}</a> <br />
+          
+                    <a class="attributeHead indentLevel2">iss : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.claims.iss }}</a> <br />
+          
+                    <a class="attributeHead indentLevel2">jti : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.claims.jti }}</a> <br />
+          
+                    <a class="attributeHead indentLeve3">scp : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.claims.scp }}</a> <br />
+          
+                    <a class="attributeHead indentLevel2">sub : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.claims.sub }}</a> <br />
+          
+                    <a class="attributeHead indentLevel2">uid : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.claims.uid }}</a> <br />
+          
+                    <a class="attributeHead indentLevel2">ver : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.claims.ver }}</a> <br />
+          
+                    <a class="attributeHead indentLevel1">expiresAt : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.expiresAt }}</a> <br />
+          
+                    <a class="attributeHead indentLevel1">groups : </a>
+                    <a class="tokenAttribute groups">{{ arrAccessToken.claims.groups }}</a> <br />
+          
+                    <a class="attributeHead indentLevel1">tokenType : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.tokenType }}</a> <br />
+          
+                    <a class="attributeHead indentLevel1">userinfoUrl : </a>
+                    <a class="tokenAttribute">{{ arrAccessToken.userinfoUrl }}</a> <br />
+                  </p>
+
+                </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+</div>
+
+
+<!-- <div class="userDiv">{{ this.thisUser.accessToken.claims.sub }}</div>
+
+      
+      <div class="LeftcontainerItem">
+        <div class="scopeHead">OpenID ConnectのScopeを選択してください</div>
+        
+
+
+      </div>
+      <div class="RightcontainerItem">
+        <div class="rightHead">
+          <div class="strRightHead">Access Token</div>
+        </div>
+        <div>
+          <p class="tokenDiv">
+            <ngx-json-viewer [json]="thisAccessToken" [depth]="2"></ngx-json-viewer>
+
+          </p>
+        </div>
+
+      </div> -->

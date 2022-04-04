@@ -1,0 +1,15 @@
+.responsive{
+  width: 600px!important;
+  height:auto!important;
+}
+
+.menuContainer{
+  /* border-style: dotted; */
+  width: 90%!important;
+text-align: center!important;
+}
+
+.menuItem{
+  /* border-style: dotted; */
+  width: 100%!important;
+}

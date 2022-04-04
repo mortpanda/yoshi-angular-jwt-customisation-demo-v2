@@ -1,0 +1,118 @@
+.mainContainer {
+  /* border-style: dotted; */
+  width: 90% !important;
+  /* height: 500px!important; */
+  margin-top: 50px !important;
+  text-align: center !important;
+}
+
+.containerItems {
+  /* text-align: center!important; */
+  width: 500px !important;
+  height: auto !important;
+  /* min-height:100px!important; */
+  background: #ffffff !important;
+  border-radius: 5px !important;
+  box-shadow: 3px 9px 10px -2px #41414b !important;
+  /* padding-top: 15px!important; */
+  padding-bottom: 15px !important;
+}
+
+.testParamHead {
+  background-color: #00297a !important;
+  color: #ffffff !important;
+  border-top-right-radius: 5px !important;
+  border-top-left-radius: 5px !important;
+  text-align: center !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 18px!important;
+}
+/* Hide the scrollbar byu still allow scroll : Chrome, Safari and Opera */
+.containerTokenItems::-webkit-scrollbar {
+  display: none;
+}
+/* Hide the scrollbar byu still allow scroll :  IE, Edge and Firefox */
+.containerTokenItems {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.paramBanner {
+  width: 300px !important;
+  height: auto !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.configContainer {
+  text-align: center !important;
+  width: 400px !important;
+  height: auto !important;
+  background: #ffffff !important;
+  border-radius: 5px !important;
+  box-shadow: 3px 9px 10px -2px #41414b !important;
+  margin-bottom: 15px !important;
+}
+
+.btnSetting {
+  margin-bottom: 20px !important;
+}
+
+.tokenDivHeading {
+  background-color: #00297a !important;
+  color: #ffffff !important;
+  border-top-right-radius: 5px !important;
+  border-top-left-radius: 5px !important;
+  text-align: center !important;
+  /* padding-top: 10px!important; */
+  padding-bottom: 10px !important;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
+  font-weight: 500 !important;
+}
+
+.quickTokenDiv {
+  background-color: #ffffff !important;
+
+  margin-top: 10px !important;
+}
+
+.containerTokenItems {
+  background-color: #ffffff !important;
+  /* text-align: center!important; */
+  /* color: #ffffff !important; */
+  width: 900px !important;
+  height: 500px !important;
+  overflow-y: scroll !important;
+  /* overflow-x: scroll !important; */
+  /* min-height:100px!important; */
+  /* background: black !important; */
+  border-radius: 5px !important;
+  box-shadow: 3px 9px 10px -2px #41414b !important;
+  /* padding-top: 15px!important; */
+  padding-bottom: 15px !important;
+  font-size: 8px !important;
+  text-align: left !important;
+}
+
+.tokenDiv {
+  background: #D7D7DC !important;
+  color: #ffffff !important;
+  margin: 5px!important;
+  border-radius: 5px!important;
+}
+
+.widgetDiv{
+  margin-top: 15px!important;
+}
+.buttons{
+  text-align: center!important;
+}
+
+#okta-sign-in.auth-container.main-container{
+  box-shadow: 3px 9px 10px -2px #41414b !important;
+}

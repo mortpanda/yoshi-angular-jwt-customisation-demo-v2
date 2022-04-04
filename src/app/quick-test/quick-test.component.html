@@ -1,0 +1,95 @@
+<div class="wrapper">
+  <div class="page-header section-dark" style="background-image: url('assets/img/lilac_back.png')">
+
+    <div class="mainContainer" fxLayout="columns wrap" fxLayoutAlign="center center" fxLayoutGap="15px">
+
+      <div class="configContainer">
+        <div class="testParamHead">Widgetパラメター</div>
+        <div>
+          <img src="assets/img/okta-japan-small.png" class="paramBanner">
+          <div>
+            <!--  -->
+            <form [formGroup]="widgetParamForm" (ngSubmit)="onSubmit()" id="widgetParamForm">
+              <!-- <p *ngIf="loginInvalid" class="form_login"> -->
+                <p class="form_login">
+              </p>
+              <div class="form-group">
+                <!-- <mat-form-field appearance="legacy" [style.width.px]=350>
+                  <mat-label>アプリのClient ID</mat-label>
+                  <input matInput placeholder="Client IDを入力してください" cdkFocusInitial input class="form-control"
+                    id="clientId" autocomplete="clientId" formControlName="clientId" required
+                    (change)="ClientIdUpdated($event)">
+                  <mat-icon matSuffix>apps</mat-icon>
+                </mat-form-field> -->
+              </div>
+              <div class="form-group">
+                <mat-form-field appearance="legacy" [style.width.px]=350>
+                  <mat-label>OpenID ConnectのScope</mat-label>
+                  <input matInput placeholder="openid, email, profile" input class="form-control" id="scope"
+                    autocomplete="scope" formControlName="scope" required (change)="ScopeUpdated($event)">
+                  <mat-icon matSuffix>code</mat-icon>
+                </mat-form-field>
+              </div>
+              <div class="buttons">
+                <button id="applySetting" type="submit" class="btn btn-reg-danger btn-round"
+                class="btn btn-danger btn-round btnSetting">設定の適応</button>
+                <br />
+              <a class="btn btn-reg-danger btn-round" class="btn btn-danger btn-round btnSetting" id="resetSetting"
+                (click)="Reset()">Scopeの初期化</a>
+              
+              </div>
+            </form>
+            <!--  -->
+          </div>
+
+        </div>
+      </div>
+
+      <div class="containerTokenItems" *ngIf="quickTestflag; else notShow">
+        <div>
+          <div class="testParamHead">
+            Tokenの内容
+          </div>
+          <div class="quickTokenDiv">
+
+            <p class="tokenDiv">
+              <ngx-json-viewer [json]="strQuickTestTokens" [depth]="1"></ngx-json-viewer>
+
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <ng-template #notShow>
+        <div>{{ ConfigChanged }}</div>
+        <div class="widgetDiv">
+          <app-quick-test-widget></app-quick-test-widget>
+        </div>
+        
+      </ng-template>
+
+
+    </div>
+    <div class="main">
+    </div>
+  </div>
+
+  <!-- <div class="containerTokenItems">
+    <div *ngIf="quickTestflag; else notShow">
+      <div class="testParamHead">
+        Tokenの内容
+      </div>
+      <div class="quickTokenDiv">
+        
+        <p class="tokenDiv">
+          <ngx-json-viewer [json]="strQuickTestTokens" [depth]="1"></ngx-json-viewer>
+
+        </p>
+      </div>
+    </div>
+    <ng-template #notShow>
+      <div class="widgetDiv">
+        <app-quick-test-widget></app-quick-test-widget>
+      </div>
+    </ng-template>
+  </div> -->

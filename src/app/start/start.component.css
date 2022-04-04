@@ -1,0 +1,264 @@
+/* .userText {
+  color: #ffffff !important;
+  text-align: center !important;
+  white-space: pre-line;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+ "Cantarell", "Helvetica Neue", sans-serif!important;
+} */
+
+.fxContainer {
+  /*  */
+  /* border-style: dotted !important; */
+  /*  */
+  width: 95% !important;
+  height: auto !important;
+  text-align: center !important;
+  margin-top: 90px !important;
+  overflow: scroll !important;
+}
+
+/* Hide the scrollbar byu still allow scroll : Chrome, Safari and Opera */
+.fxContainer::-webkit-scrollbar {
+  display: none !important;
+}
+/* Hide the scrollbar byu still allow scroll :  IE, Edge and Firefox */
+.fxContainer {
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+}
+
+.userDiv {
+  /*  */
+  /* border-style: solid !important; */
+  /*  */
+  width: 100% !important;
+  height: auto !important;
+  padding-top: 15px!important;
+  padding-bottom: 15px!important;
+  color: #ffffff !important;
+  font-size: 18px !important;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
+}
+
+.contentDiv{
+  width: 100%!important;
+  
+}
+.tokenContentContainer{
+  /*  */
+  /* border-style: solid !important; */
+  /*  */
+  
+}
+
+.tokenItem{
+  /*  */
+  /* border-style: solid !important; */
+  /*  */
+  width: 650px!important;
+  height:auto!important;  
+  background-color: #ffffff!important;
+  border-radius: 5px!important;
+  margin-bottom: 10px!important;
+  box-shadow: 3px 9px 10px -2px #41414b !important;
+}
+
+.tokenHead{
+  /* border-style: solid !important; */
+  padding-top: 10px!important;
+  padding-bottom: 10px!important;
+  margin: 5px!important;
+  width: 100%!important;
+  background-color: #00297A!important;
+  color:#ffffff!important;
+  font-size: 18px !important;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
+    border-radius: 5px!important;
+}
+
+.tokenContent{
+  /* border-style: solid !important; */
+  width: 100%!important;
+  height:450px!important;
+}
+
+.tokenHead2{
+  /* border-style: solid !important; */
+  padding-top: 10px!important;
+  padding-bottom: 10px!important;
+  margin: 5px!important;
+  width: 100%!important;
+  background-color: #3C2B57!important;
+  color:#ffffff!important;
+  font-size: 18px !important;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
+    border-radius: 5px!important;
+}
+
+.customClaim{
+  background-color: yellow!important;
+  color: black!important;
+  padding-left: 5px!important;
+  padding-right: 5px!important;
+}
+
+.strToken {
+  border-radius: 5px !important;
+  /* width: 100%!important; */
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  margin-top: 15px !important;
+  word-wrap: normal !important;
+  background-color: black !important;
+}
+.jsonJWT {
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  text-align: left !important;
+  font-family: "Lucida Console", "Lucida Sans Typewriter", "monaco", "Bitstream Vera Sans Mono", monospace !important;
+  font-size: 12px !important;
+  padding-top: 20px!important;
+  padding-bottom: 20px!important;
+  padding-left: 10px!important;
+  padding-right: 10px!important;
+}
+
+.attributeHead {
+  color: #44abbe !important;
+  font-weight: 600 !important;
+  min-width : 60px!important;
+  margin-left: 5px!important;
+}
+
+.jwtcolon {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  width : 100px!important;
+}
+
+.tokenAttribute {
+  color: #44be92 !important;
+  font-weight: 600 !important;
+  width : 550px!important;
+  /* padding-left: 5px!important; */
+}
+
+.indentLevel1 {
+  padding-left:1em!important;
+	text-indent:-1em!important;
+  /* padding-left: 15px!important; */
+
+}
+
+.indentLevel2{
+  padding-left:2em!important;
+	text-indent:-2em!important;
+  /* padding-left: 25px!important; */
+}
+
+.indentLeve3{
+  padding-left:3em;
+	text-indent:-3em;
+}
+
+.indentLeve4{
+  padding-left:3em;
+	text-indent:-3em;
+}
+
+.integerAtt{
+  color: #B144BE!important;
+}
+
+.attExpiry, .customClaim{
+  /* background: yellowgreen!important; */
+  color: black!important;
+  font-weight: 600!important;
+  /* color: red!important; */
+}
+.groups{
+  background: yellowgreen!important;
+  color: red!important;
+}
+
+/* #################################### */
+/* #################################### */
+
+
+
+/* .subContainer {
+  
+  border-style: dotted !important;
+  
+  width: 100% !important;
+} */
+
+/* .scopeHead{
+  background-color: #00297A!important;
+  color: #ffffff!important;
+  height: 24px!important;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
+    border-radius: 5px!important;
+    margin: 5px!important;
+} */
+
+/* .LeftcontainerItem {
+ 
+  border-style: solid !important;
+ 
+ 
+  width: 50% !important;
+  height: 90px !important;
+  margin-bottom: 20px!important;
+ 
+  border-radius: 5px !important;
+  background-color: #ffffff !important;
+  box-shadow: 3px 9px 10px -2px #41414b !important;
+} */
+
+/* .RightcontainerItem {
+  width: 80% !important;
+  height: auto !important;
+  border-radius: 5px !important;
+  background-color: #ffffff !important;
+  box-shadow: 3px 9px 10px -2px #41414b !important; 
+}*/
+
+/* .tokenDiv {
+  all: none !important;
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+  margin-bottom: 15px !important;
+  margin-top: 15px !important;
+  min-height: 450px !important;
+  text-align: left !important;
+  overflow-wrap: break-word !important;
+  font-size: 10px !important;
+  white-space: pre-wrap;
+  background-color: #d7d7dc !important;
+  border-radius: 5px !important;
+  font-family: "Lucida Console", "Lucida Sans Typewriter", "monaco", "Bitstream Vera Sans Mono", monospace !important;
+  
+} */
+
+
+/* .rightHead{
+  background-color: #00297A!important;
+  height:50px!important;
+  border-radius: 5px!important;
+  margin: 5px!important;
+  
+}
+.strRightHead{
+  color: #ffffff !important;
+  font-size: 18px !important;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
+    padding-top: 10px!important;
+}
+ */
